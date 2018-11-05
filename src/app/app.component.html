@@ -1,12 +1,12 @@
-<button mat-button [matMenuTriggerFor]="appMenu">Menu</button>
+<!--<button mat-button [matMenuTriggerFor]="appMenu">Menu</button>
 <mat-menu #appMenu="matMenu">
   <button mat-menu-item routerLink="/sgtkin">Settings</button>
   <button mat-menu-item routerLink="/sgtkin">Help</button>
 </mat-menu>
 
-<router-outlet></router-outlet>
 
-<!--<div style="text-align:center">
+
+<div style="text-align:center">
   <h1>Welcome to {{title}}!</h1>
 </div>
 <nav>
@@ -14,3 +14,28 @@
 </nav>
 <router-outlet></router-outlet>
 <app-sgtkin></app-sgtkin>-->
+<div class="container-fluid">
+      <div class="row">
+<nav class="col-md-1 d-none d-md-block bg-light sidebar">
+  <div class="sidebar-sticky">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sgtkin">
+          <span data-feather="home"></span>
+          SgtkIn <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sgtkin">
+          <span data-feather="file"></span>
+          SgtkOut
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div>
+<router-outlet></router-outlet>
+      
+

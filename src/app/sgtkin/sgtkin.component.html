@@ -1,8 +1,38 @@
-<h2>Sgtkin List</h2>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-11 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+ </div>
+      <h2>Sgtkin List</h2>
 
-<div *ngFor="let sgtkin of sgtkins">
+<!--<div *ngFor="let sgtkin of sgtkins">
   {{sgtkin.id}}
+</div>-->
+
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+      <thead>
+          <tr>
+            <th>#</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let sgtkin of sgtkins">
+            <tr>
+              <td>{{sgtkin.id}}</td>
+              <td>{{sgtkin.xmlIn}}</td>
+              <td>{{sgtkin.xmlOut}}</td>
+              <td>{{sgtkin.xmlIn}}</td>
+              <td>{{sgtkin.xmlOut}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
 </div>
+   
+</main>
 
 <!--<table mat-table [dataSource]=sgtkins>
   <ng-container matColumnDef="id">
